@@ -1,0 +1,190 @@
+.weather-body {
+  height: 80vh;
+  width: 70vw;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.weather-banner {
+  height: 100%;
+  width: 40%;
+  background-image: linear-gradient(
+      to right,
+      rgba(107, 138, 175, 0.801),
+      rgba(128, 128, 255, 0.801)
+    ),
+    url(https://img.maximummedia.ie/joe_ie/eyJkYXRhIjoie1widXJsXCI6XCJodHRwOlxcXC9cXFwvbWVkaWEtam9lLm1heGltdW1tZWRpYS5pZS5zMy5hbWF6b25hd3MuY29tXFxcL3dwLWNvbnRlbnRcXFwvdXBsb2Fkc1xcXC8yMDE4XFxcLzA3XFxcLzA2MTUxNzUwXFxcL2lTdG9jay05MTg5NTQwMDItMS5qcGdcIixcIndpZHRoXCI6NzY3LFwiaGVpZ2h0XCI6NDMxLFwiZGVmYXVsdFwiOlwiaHR0cHM6XFxcL1xcXC93d3cuam9lLmllXFxcL2Fzc2V0c1xcXC9pbWFnZXNcXFwvam9lXFxcL25vLWltYWdlLnBuZz9pZD0yNjRhMmRiZTM3MGYyYzY3NWZjZFwiLFwib3B0aW9uc1wiOltdfSIsImhhc2giOiI5OTc4YWYxNWQ4ZDVjODI5YjZiYWFkNWQ1MmZkNDhlZjhmNGM5ODcwIn0=/istock-918954002-1.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.weather-banner-title {
+  font-size: 6rem;
+  position: absolute;
+  top: 35%;
+  transform: translate(8%, -50%);
+}
+
+.weather-banner-subtitle {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 50%;
+  width: 90%;
+  transform: translate(8%, -50%);
+}
+
+.weather-details {
+  height: 100%;
+  width: 60%;
+  background-color: rgb(39, 54, 72);
+}
+
+.weather-details-form {
+  height: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2.5rem;
+}
+
+.weather-details-form-input {
+  font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+  color: white;
+  border: none;
+  border-bottom: 1px solid rgb(130, 137, 229);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.weather-details-form-input:focus {
+  outline: none;
+}
+
+.weather-details-form-button {
+  border: none;
+  padding: 0.7rem;
+  height: 3rem;
+  background-color: rgb(130, 137, 229);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translate(-15%, -15%);
+}
+.weather-details-form-button:active:hover {
+  transform: translate(-15%, -10%);
+  outline: none;
+}
+
+.weather-details-details {
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 2.5rem;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  .weather-body {
+    height: 80vh;
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .weather-body {
+    height: 100%;
+    width: 80vw;
+    flex-direction: column;
+  }
+
+  .weather-banner {
+    width: 100%;
+    height: 20vh;
+  }
+
+  .weather-banner-title {
+    font-size: 5rem;
+    position: absolute;
+    top: 35%;
+    transform: translate(8%, -50%);
+  }
+
+  .weather-banner-subtitle {
+    font-size: 2rem;
+    position: absolute;
+    top: 60%;
+    width: 90%;
+    transform: translate(8%, -50%);
+  }
+
+  .weather-details {
+    width: 100%;
+    height: 80vh;
+  }
+
+  .weather-details-details {
+  }
+
+  .weather-details-form {
+    height: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .weather-body {
+    height: 100%;
+    width: 95vw;
+    flex-direction: column;
+  }
+
+  .weather-banner {
+    height: 30vh;
+    width: 100%;
+  }
+
+  .weather-banner-title {
+    font-size: 3rem;
+    position: absolute;
+    top: 35%;
+    transform: translate(8%, -50%);
+  }
+
+  .weather-banner-subtitle {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    width: 90%;
+    transform: translate(8%, -50%);
+  }
+
+  .weather-details {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .weather-details-details {
+    height: 50%;
+  }
+
+  .weather-details-form {
+    height: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  .weather-details-form-input {
+    font-size: 1rem;
+    color: white;
+  }
+
+  .weather-details-form-button {
+    padding: 0.7rem;
+    height: 3rem;
+    margin-left: 66%;
+    margin-top: 4%;
+  }
+}
