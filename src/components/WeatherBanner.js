@@ -1,5 +1,4 @@
 import React from "react";
-import "./Weather.css";
 
 const WeatherBanner = () => {
   return (
