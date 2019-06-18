@@ -30,7 +30,7 @@
 .weather-banner-subtitle {
   font-size: 2.5rem;
   position: absolute;
-  top: 50%;
+  top: 60%;
   width: 90%;
   transform: translate(8%, -50%);
 }
@@ -75,7 +75,7 @@
 }
 
 .weather-details-details {
-  height: 70rem;
+  height: 50rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
