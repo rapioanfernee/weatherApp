@@ -2,7 +2,7 @@
   "name": "weather-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rapioanfernee.github.io/leaveplanner/",
+  "homepage": "https://rapioanfernee.github.io/weatherapp/",
   "dependencies": {
     "axios": "^0.18.0",
     "dotenv": "^8.0.0",
